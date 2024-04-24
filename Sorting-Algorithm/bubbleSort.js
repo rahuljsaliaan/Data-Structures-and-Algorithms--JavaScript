@@ -5,10 +5,7 @@ function swap(arr, index) {
 }
 
 function bubbleSort(numArr) {
-  first = 0;
-  second = 1;
-
-  for (let i = 0; i < numArr.length; i++) {
+  for (let i = 0; i < numArr.length - 1; i++) {
     for (let j = 0; j < numArr.length - i; j++) {
       if (numArr[j] > numArr[j + 1]) {
         swap(numArr, j);
