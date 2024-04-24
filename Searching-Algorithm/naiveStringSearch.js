@@ -1,7 +1,7 @@
 function naiveStringSearch(string, pattern) {
   count = 0;
-  for (i = 0; i < string.length; i++) {
-    for (j = 0; j < pattern.length; j++) {
+  for (let i = 0; i < string.length; i++) {
+    for (let j = 0; j < pattern.length; j++) {
       if (string[i + j] !== pattern[j]) break;
 
       if (j === pattern.length - 1) {

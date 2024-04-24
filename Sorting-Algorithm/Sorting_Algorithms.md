@@ -1,0 +1,21 @@
+# Sorting Algorithms
+
+Sorting is a process of rearranging the items in a collection (e.g. an array) so that the items are in some kind of order
+
+## Why Sorting algorithms ?
+
+- Sorting is an incredibly common task, so it's good to know how it works
+- There are many different ways to sort things, and different techniques have their own advantages and disadvantages
+
+## Bubble Sort
+
+Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+
+- Worst-case time complexity: O(n^2). Worst case occurs when array is reverse sorted.
+- Best-case time complexity: O(n). Best case occurs when array is already sorted.
+- Average time complexity: O(n^2).
+- Space complexity: O(1). It's a constant space, in-place sorting algorithm.
+
+The main advantage of Bubble Sort is the simplicity of the algorithm. It's easy to understand and implement. However, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
+
+[Bubble Sort. Example](/Sorting-Algorithm/bubbleSort.js)
