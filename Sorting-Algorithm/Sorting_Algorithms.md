@@ -32,3 +32,16 @@ Selection Sort is a simple sorting algorithm. This algorithm divides the input i
 The main advantage of Selection Sort is its simplicity and the fact that it performs well on small lists. However, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
 
 [Selection Sort. Example](/Sorting-Algorithm/selectionSort.js)
+
+## Insertion Sort
+
+Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+
+- Worst-case time complexity: O(n^2). Worst case occurs when array is reverse sorted.
+- Best-case time complexity: O(n). Best case occurs when array is already sorted.
+- Average time complexity: O(n^2).
+- Space complexity: O(1). It's a constant space, in-place sorting algorithm.
+
+The main advantage of Insertion Sort is its simplicity. It also performs well for small lists or for lists that are already partially sorted. However, like Bubble Sort, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
+
+[Insertion Sort. Example](/Sorting-Algorithm/insertionSort.js)
