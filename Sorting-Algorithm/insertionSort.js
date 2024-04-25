@@ -13,7 +13,7 @@ function insertionSort(numArr) {
       numArr[j + 1] = numArr[j];
     }
 
-    numArr[j + 1] = currentValue;
+    if (j !== i) numArr[j + 1] = currentValue;
   }
 }
 
