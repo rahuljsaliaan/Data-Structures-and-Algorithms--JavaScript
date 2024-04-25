@@ -1,3 +1,5 @@
+const numArrayGenerator = require("../Excercises/numArrayGenerator");
+
 function swap(arr, index) {
   let temp = arr[index];
   arr[index] = arr[index + 1];
@@ -42,7 +44,7 @@ function bubbleSort(numArr) {
   }
 }
 
-const numArr = [3, 5, 6, 2, 1, 2, 3];
+const numArr = numArrayGenerator(100000);
 
 bubbleSort(numArr);
 
