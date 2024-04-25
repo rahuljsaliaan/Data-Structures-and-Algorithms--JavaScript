@@ -19,3 +19,16 @@ Bubble Sort is a simple sorting algorithm that repeatedly steps through the list
 The main advantage of Bubble Sort is the simplicity of the algorithm. It's easy to understand and implement. However, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
 
 [Bubble Sort. Example](/Sorting-Algorithm/bubbleSort.js)
+
+## Selection Sort
+
+Selection Sort is a simple sorting algorithm. This algorithm divides the input into a sorted and an unsorted region. The sorted region is built up by repeatedly selecting the smallest (or largest, depending on the ordering) element of the unsorted region and swapping it with the leftmost unsorted element, moving the boundary of the sorted region one element to the right.
+
+- Worst-case time complexity: O(n^2). Worst case occurs when array is sorted in reverse order.
+- Best-case time complexity: O(n^2). Best case occurs when array is already sorted. Even in the best case, it makes n^2 comparisons.
+- Average time complexity: O(n^2).
+- Space complexity: O(1). It's a constant space, in-place sorting algorithm.
+
+The main advantage of Selection Sort is its simplicity and the fact that it performs well on small lists. However, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
+
+[Selection Sort. Example](/Sorting-Algorithm/selectionSort.js)
