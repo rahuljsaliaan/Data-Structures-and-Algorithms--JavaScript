@@ -1,7 +1,8 @@
-const numArrGenerator = require("../utils/numArrayGenerator");
+const numArrayGenerator = require("../utils/numArrayGenerator");
 
 function swap(arr, index1, index2) {
   [arr[index1], arr[index2]] = [arr[index2], arr[index1]];
+  return true;
 }
 
 function pivot(arr, start = 0, end = arr.length - 1) {
@@ -19,16 +20,13 @@ function pivot(arr, start = 0, end = arr.length - 1) {
   return pivotIdx;
 }
 
-const numArr = numArrGenerator(10);
-
-// NOTE: The advantage of using quick sort is not creating new array and just passing the left and the right index to sort based on pivot function
+const numArr = numArrayGenerator(10000000);
 
 function quickSort(arr, left = 0, right = arr.length - 1) {
-  if (left >= right) return arr;
+  if (left >= right) return;
 
   const pivotIdx = pivot(arr, left, right);
 
-  // NOTE: We do not use the pivot index because it's already sorted
   // left
   quickSort(arr, left, pivotIdx - 1);
 
