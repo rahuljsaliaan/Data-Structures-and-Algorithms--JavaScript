@@ -24,7 +24,7 @@ Bubble Sort is a simple sorting algorithm that repeatedly steps through the list
 
 The main advantage of Bubble Sort is the simplicity of the algorithm. It's easy to understand and implement. However, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
 
-[Bubble Sort. Example](/Sorting-Algorithm/bubbleSort.js)
+[Bubble Sort. Example](/Sorting-Algorithms/bubbleSort.js)
 
 ## Selection Sort
 
@@ -37,7 +37,7 @@ Selection Sort is a simple sorting algorithm. This algorithm divides the input i
 
 The main advantage of Selection Sort is its simplicity and the fact that it performs well on small lists. However, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
 
-[Selection Sort. Example](/Sorting-Algorithm/selectionSort.js)
+[Selection Sort. Example](/Sorting-Algorithms/selectionSort.js)
 
 ## Insertion Sort
 
@@ -50,10 +50,23 @@ Insertion Sort is a simple sorting algorithm that builds the final sorted array 
 
 The main advantage of Insertion Sort is its simplicity. It also performs well for small lists or for lists that are already partially sorted. However, like Bubble Sort, it's not suitable for large data sets as its average and worst-case time complexity are quite high compared to other sorting algorithms like QuickSort, MergeSort, etc.
 
-[Insertion Sort. Example](/Sorting-Algorithm/insertionSort.js)
+[Insertion Sort. Example](/Sorting-Algorithms/insertionSort.js)
 
 ---
 
 ## Intermediatory Sorting Algorithms: Merge Sort, Quick Sort, and Radix Sort
 
 Merge Sort, Quick Sort, and Radix Sort are intermediate level sorting algorithms. They are more complex than beginner algorithms but offer better performance, especially on larger data sets.
+
+## Merge Sort
+
+Merge Sort is an efficient, stable sorting algorithm that makes use of the divide and conquer strategy. It divides the unsorted list into N sub-lists, each containing one element, and then repeatedly merges sub-lists to produce new sorted sub-lists until there is only one sub-list remaining.
+
+- Worst-case time complexity: O(n log n). Worst case occurs when the array is in reverse order.
+- Best-case time complexity: O(n log n). Best case occurs when the array is already sorted.
+- Average time complexity: O(n log n).
+- Space complexity: O(n). It requires additional space for the auxiliary array used during merge operation.
+
+The main advantage of Merge Sort is its predictable time complexity behavior. It performs well for any type of data and its performance doesn't degrade with large data sets. However, it requires additional space which can be a limiting factor if memory is a concern.
+
+[Merge Sort. Example](/Sorting-Algorithms/mergeSort.js)

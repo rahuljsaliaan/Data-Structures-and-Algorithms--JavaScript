@@ -12,7 +12,7 @@ Inbuilt methods that follow linear search
 - find
 - findIndex
 
-[Linear Search. Example](/Searching-Algorithm/linearSearch.js)
+[Linear Search. Example](/Searching-Algorithms/linearSearch.js)
 
 ## Binary Search
 
@@ -22,4 +22,4 @@ Inbuilt methods that follow linear search
 - It is an example for Divide and Conquer Problem solving approach
 - It has time complexity of O(log n) (worst and average case)
 
-[Binary Search. Example](/Searching-Algorithm/binarySearch.js)
+[Binary Search. Example](/Searching-Algorithms/binarySearch.js)
