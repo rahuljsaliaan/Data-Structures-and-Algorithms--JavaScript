@@ -1,4 +1,4 @@
-const numArrayGenerator = require("../Excercises/numArrayGenerator");
+const numArrayGenerator = require("../utils/numArrayGenerator");
 
 function merge(arr1, arr2) {
   const results = [];

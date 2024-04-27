@@ -70,3 +70,16 @@ Merge Sort is an efficient, stable sorting algorithm that makes use of the divid
 The main advantage of Merge Sort is its predictable time complexity behavior. It performs well for any type of data and its performance doesn't degrade with large data sets. However, it requires additional space which can be a limiting factor if memory is a concern.
 
 [Merge Sort. Example](/Sorting-Algorithms/mergeSort.js)
+
+## Quick Sort
+
+Quick Sort is a highly efficient sorting algorithm and is based on the partitioning of an array of data into smaller arrays. A large array is partitioned into two arrays, one of which holds values smaller than the specified value, say pivot, based on which the partition is made, and another array holds values greater than the pivot value.
+
+- Worst-case time complexity: O(n^2). Worst case occurs when the array is already sorted or in reverse order.
+- Best-case time complexity: O(n log n). Best case occurs when the pivot element is always the middle element or near the middle element.
+- Average time complexity: O(n log n).
+- Space complexity: O(log n). It requires less space as it works in place by swapping elements.
+
+The main advantage of Quick Sort is its ability to sort in-place, meaning it doesn't require additional space like Merge Sort. It's also faster in practice than other O(n log n) algorithms for most inputs. However, its worst-case performance is poor, and it's not a stable sort.
+
+[Quick Sort. Example](/Sorting-Algorithms/quickSort.js)
