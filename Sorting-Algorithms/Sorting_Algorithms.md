@@ -83,3 +83,16 @@ Quick Sort is a highly efficient sorting algorithm and is based on the partition
 The main advantage of Quick Sort is its ability to sort in-place, meaning it doesn't require additional space like Merge Sort. It's also faster in practice than other O(n log n) algorithms for most inputs. However, its worst-case performance is poor, and it's not a stable sort.
 
 [Quick Sort. Example](/Sorting-Algorithms/quickSort.js)
+
+## Radix Sort
+
+Radix Sort is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value. The radix is usually base 10, but can be any integer.
+
+- Worst-case time complexity: O(nk), where n is the number of elements and k is the number of digits in the maximum number. Radix Sort can be faster than comparison-based sorting algorithms like Quick Sort if the length of the input numbers is significantly less than the number of elements.
+- Best-case time complexity: O(nk). The time complexity of Radix Sort is linear even in the best case.
+- Average time complexity: O(nk).
+- Space complexity: O(n + k). It requires extra space to hold the auxiliary arrays, unlike Quick Sort which is an in-place sort.
+
+The main advantage of Radix Sort is its linear time complexity which makes it faster for larger lists if the length of the numbers is less. However, it's not a comparison sort and it requires more space than in-place sorts. It also only works for numbers or strings.
+
+[Radix Sort. Example](/Sorting-Algorithms/radixSort.js)
