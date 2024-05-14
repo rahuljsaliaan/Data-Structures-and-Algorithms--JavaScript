@@ -161,7 +161,6 @@ class DoublyLinkedList {
     if (this.length <= 1) return this;
 
     let currentNode = this.head;
-    let temp = null;
 
     // Swap the head and tail
     [this.head, this.tail] = [this.tail, this.head];
