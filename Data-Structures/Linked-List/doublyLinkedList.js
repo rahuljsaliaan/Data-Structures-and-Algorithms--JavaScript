@@ -157,15 +157,39 @@ class DoublyLinkedList {
     return currentNode;
   }
 
-  reverse() {}
+  reverse() {
+    if (this.length <= 1) return this;
+
+    let currentNode = this.head;
+    let temp = null;
+
+    // Swap the head and tail
+    [this.head, this.tail] = [this.tail, this.head];
+
+    // Traverse the list and swap the next and prev pointers
+    while (currentNode != null) {
+      [currentNode.prev, currentNode.next] = [
+        currentNode.next,
+        currentNode.prev,
+      ];
+      currentNode = currentNode.prev;
+    }
+
+    return this;
+  }
 }
 
 const list = new DoublyLinkedList();
 
 list.push(20);
 list.push(30);
-list.insert(1, 99);
-list.remove(2);
-console.log(list.get(4));
+list.push(40);
+// list.insert(1, 99);
+// list.remove(2);
+// console.log(list.get(4));
+
+console.log(list);
+
+list.reverse();
 
 console.log(list);
