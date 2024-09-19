@@ -14,7 +14,7 @@ Data Structures are collection of values, the relationship among them, and the f
 
 1. **Arrays**: A collection of elements identified by array index.
 2. **Linked List**: Each element is a separate object that contains a reference (or link) to the next object in the list. [More on Linked List](/Data-Structures/Linked-List/Linked_List.md)
-3. **Stack**: A LIFO (Last In First Out) data structure.
+3. **Stack**: A LIFO (Last In First Out) data structure. [More on Stack](/Data-Structures/Stack/Stack.md)
 4. **Queue**: A FIFO (First In First Out) data structure.
 5. **Tree**: A data structure where each element is attached to one (or more than one) other elements in a parent-child relationship.
 6. **Graph**: A collection of nodes or vertices, where each node or vertex is connected by a edge.
