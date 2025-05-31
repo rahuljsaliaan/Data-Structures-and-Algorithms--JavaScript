@@ -1,4 +1,4 @@
-# PROBLEM SOLVING PATTERNS:
+# PROBLEM SOLVING PATTERNS
 
 1. Frequency Counter
 2. Multiple Pointers

@@ -14,7 +14,7 @@ graph TD
     C --> B[1]
     B --> First["Bottom"]
     size[Size: 5]
-    
+
     style B fill:#bbf,stroke:#333,stroke-width:2px,color:#000
     style C fill:#bbf,stroke:#333,stroke-width:2px,color:#000
     style D fill:#bbf,stroke:#333,stroke-width:2px,color:#000
@@ -31,6 +31,6 @@ A common real-life example of a stack is a **stack of plates**. When you **add a
 
 ## Applications
 
-- expression evaluation
-- backtracking algorithms
-- function call management in programming language
+- Expression evaluation
+- Backtracking algorithms
+- Function call management in programming language
