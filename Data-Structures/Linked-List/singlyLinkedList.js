@@ -17,12 +17,11 @@ class SinglyLinkedList {
 
     if (!this.head) {
       this.head = node;
-      this.tail = node;
     } else {
       this.tail.next = node;
-      this.tail = node;
     }
 
+    this.tail = node;
     this.length++;
 
     return node;

@@ -34,3 +34,8 @@ A common real-life example of a stack is a **stack of plates**. When you **add a
 - Expression evaluation
 - Backtracking algorithms
 - Function call management in programming language
+
+## Stack Implementation
+
+- Stacks can be implemented using **arrays**, where elements are added and removed from the end of the array using built-in methods like `push` and `pop`. [Stack using Array - Example](/Data-Structures/Stack/stackArray.js)
+- Stacks can also be implemented using **objects (or classes)**, where you manually manage the storage and provide methods for stack operations. [Stack using Linked List - Example](/Data-Structures/Stack/stackLinkedList.js)
