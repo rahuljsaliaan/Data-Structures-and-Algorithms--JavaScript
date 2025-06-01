@@ -43,3 +43,15 @@ flowchart TD
 - Artificial Intelligence
 - Folders in Operating Systems
 - Computer File Systems
+
+## Variants
+
+### Binary Search Tree
+
+A **Binary Search Tree (BST)** is a special type of binary tree that maintains a specific order among its elements to allow efficient searching, insertion, and deletion. A BST follows these three important rules:
+
+1. **Each node can have at most two children** (left and right).
+2. **The left child of a node contains a value less than its parent node.**
+3. **The right child of a node contains a value greater than its parent node.**
+
+This structure ensures that for any node, all values in its left subtree are less than the node's value, and all values in its right subtree are greater. As a result, operations like search, insert, and delete can be performed efficiently, typically in O(log n) time for balanced trees.
