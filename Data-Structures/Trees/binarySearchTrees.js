@@ -82,7 +82,16 @@ class BinarySearchTree {
     return this._findMin(node.left);
   }
 
+  _findSecondLargestRecursive(node, nextNode) {
+    if (!nextNode.right) {
+      return node;
+    }
+
+    return this._findSecondLargestRecursive(nextNode, nextNode.right);
+  }
+
   insert(val) {
+    this.size++;
     this.root = this._insertRecursive(this.root, val);
   }
 
@@ -91,7 +100,16 @@ class BinarySearchTree {
   }
 
   remove(val) {
+    this.size--;
     this.root = this._removeRecursive(this.root, val);
+  }
+
+  findSecondLargest() {
+    if (this.size < 2) return undefined;
+
+    if (!this.root.right) return this.root.left;
+
+    return this._findSecondLargestRecursive(this.root, this.root.right);
   }
 }
 
@@ -108,3 +126,5 @@ console.log(bst.find(45));
 bst.remove(45);
 
 console.log(bst);
+
+console.log(bst.findSecondLargest());
