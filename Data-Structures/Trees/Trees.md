@@ -54,4 +54,15 @@ A **Binary Search Tree (BST)** is a special type of binary tree that maintains a
 2. **The left child of a node contains a value less than its parent node.**
 3. **The right child of a node contains a value greater than its parent node.**
 
-This structure ensures that for any node, all values in its left subtree are less than the node's value, and all values in its right subtree are greater. As a result, operations like search, insert, and delete can be performed efficiently, typically in O(log n) time for balanced trees.
+This structure ensures that for any node, all values in its left subtree are less than the node's value, and all values in its right subtree are greater. As a result, operations like search, insert, and delete can be performed efficiently, typically in O(log n) time for balanced trees. [Binary Search Tree - Example](/Data-Structures/Trees/binarySearchTrees.js)
+
+---
+
+### Tree Traversal
+
+**Tree Traversal** refers to the process of visiting all nodes in a tree data structure in a systematic way. Each node is processed exactly once, and the traversal follows a specific order or pattern. There are two main approaches to traverse a tree:
+
+1. **Breadth First Search (BFS)** - Visits nodes level by level, starting from the root and moving horizontally across each level before going to the next level.
+2. **Depth First Search (DFS)** - Visits nodes by going as deep as possible down one path before backtracking and exploring other paths.
+
+Tree traversal is essential for operations like searching for specific values, calculating tree properties, or converting tree data into different formats.
