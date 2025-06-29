@@ -66,3 +66,18 @@ This structure ensures that for any node, all values in its left subtree are les
 2. **Depth First Search (DFS)** - Visits nodes by going as deep as possible down one path before backtracking and exploring other paths.
 
 Tree traversal is essential for operations like searching for specific values, calculating tree properties, or converting tree data into different formats.
+
+**Breadth First Search (BFS):**
+
+- Visits nodes level by level, starting from the root and moving horizontally across each level
+- **Implementation methods:**
+  1. **Queue/Array-based approach**: Uses a queue data structure (which can be implemented using arrays) and a variable to store the values of the nodes visited - most common method
+     - Place the root node in the queue
+     - **Loop as long as there is anything in the queue:**
+       - Dequeue a node from the queue and push the value of the node into the variable that stores the nodes
+       - If there is a left property on the node dequeued - add it to the queue
+       - If there is a right property on the node dequeued - add it to the queue
+     - Return the variable (array) that stores the values
+- Time complexity: O(n) where n is the number of nodes
+- Space complexity: O(w) where w is the maximum width of the tree
+- [Breadth First Search - Example](/Data-Structures/Trees/breadthFirstSearch.js)
